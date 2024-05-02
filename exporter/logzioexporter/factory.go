@@ -20,7 +20,7 @@ import (
 	"go.opentelemetry.io/collector/exporter"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/logzioexporter/internal/metadata"
+	"github.com/hyperdxio/opentelemetry-collector-contrib/exporter/logzioexporter/internal/metadata"
 )
 
 // NewFactory creates a factory for Logz.io exporter.
