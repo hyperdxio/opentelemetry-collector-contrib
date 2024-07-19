@@ -94,7 +94,7 @@ require (
 	github.com/hyperdxio/opentelemetry-collector-contrib/receiver/awscloudwatchreceiver v0.90.0
 	github.com/hyperdxio/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver v0.90.0
 	github.com/hyperdxio/opentelemetry-collector-contrib/receiver/awsecscontainermetricsreceiver v0.90.0
-	github.com/hyperdxio/opentelemetry-collector-contrib/receiver/awsfirehosereceiver v0.90.0
+	github.com/hyperdxio/opentelemetry-collector-contrib/receiver/awsfirehosereceiver v0.90.0-hdx-0
 	github.com/hyperdxio/opentelemetry-collector-contrib/receiver/awsxrayreceiver v0.90.0
 	github.com/hyperdxio/opentelemetry-collector-contrib/receiver/azureblobreceiver v0.90.0
 	github.com/hyperdxio/opentelemetry-collector-contrib/receiver/azureeventhubreceiver v0.90.0
