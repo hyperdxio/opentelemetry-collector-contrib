@@ -161,14 +161,15 @@ func (fmr *firehoseReceiver) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 	fmr.settings.Logger.Debug("Processing Firehose request", zap.String("RequestID", requestID))
 
-	if statusCode, err := fmr.validate(r); err != nil {
-		fmr.settings.Logger.Error(
-			"Invalid Firehose request",
-			zap.Error(err),
-		)
-		fmr.sendResponse(w, requestID, statusCode, err)
-		return
-	}
+	// DISABLED: Access Key validation
+	// if statusCode, err := fmr.validate(r); err != nil {
+	// 	fmr.settings.Logger.Error(
+	// 		"Invalid Firehose request",
+	// 		zap.Error(err),
+	// 	)
+	// 	fmr.sendResponse(w, requestID, statusCode, err)
+	// 	return
+	// }
 
 	body, err := fmr.getBody(r)
 	if err != nil {
